@@ -1,0 +1,86 @@
+{
+  "computación": {
+    "comp_old": [
+      "IIC2233",
+      "IIC1253",
+      "IIC2343",
+      "IIC2413",
+      "IIC2143",
+      "IIC2133",
+      "IIC2333",
+      "IIC2613",
+      "IIC2154",
+      "IIC2713"
+    ],
+    "comp_tcis": [
+      "IIC2233",
+      "IIC1253",
+      "IIC2343",
+      "IIC2413",
+      "IIC2143",
+      "IIC2133",
+      "IIC2333",
+      "IIC2613",
+      "IIC2154",
+      "IIC2513"
+    ],
+    "comp_tti": [
+      "IIC2233",
+      "IIC1253",
+      "IIC2733",
+      "IIC2413",
+      "IIC2143",
+      "IIC2133",
+      "IIC2764",
+      "IIC2513",
+      "IIC2154",
+      "IIC2713"
+    ],
+    "major_tsoft": [
+      "IIC2233",
+      "IIC1253",
+      "IIC2713",
+      "IIC2413",
+      "IIC2143",
+      "IIC2133",
+      "IIC2173",
+      "IIC2113",
+      "IIC2154",
+      "IIC2513"
+    ],
+    "common": [
+      "IIC2233",
+      "IIC1253",
+      "IIC2413",
+      "IIC2143",
+      "IIC2133",
+      "IIC2154"
+    ]
+  },
+  "investigación operativa": {
+    "all_courses": [
+      "ICS1113",
+      "ICS2523",
+      "ICS2123",
+      "ICS2121",
+      "ICS2613",
+      "ICS2813",
+      "ICS2122",
+      "EYP2114",
+      "ICS2562"
+    ],
+    "mandatories": [
+      "ICS1113",
+      "ICS2523",
+      "ICS2123",
+      "ICS2121",
+      "ICS2613",
+      "ICS2813",
+      "ICS2122"
+    ],
+    "optional": [
+      "EYP2114",
+      "ICS2562"
+    ]
+  }
+}
