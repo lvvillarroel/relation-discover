@@ -1,5 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import netgraph
 
 # Seleccionar los alumnos que completaron el major (realizar los cursos mínimos)
 
@@ -71,7 +72,8 @@ def all_relations(courses, df):
 # Dado una lista de relaciones, seleccionar las que son más representativas.
 
 
-def define_relations_dict(relations, cota):
+def define_relations_dict(rel, cota):
+    relations = rel[:]
     r = ['and', 'xor', 'suc 1', 'suc 2', 'successor', 'predecessor']
     m = max(relations)
     i = relations.index(m)
@@ -139,10 +141,8 @@ def get_all_rel_by_rel(courses, relations, df, cota):
             if course1 != course2:
                 rel_by_course = relation(course1, course2, df)
                 filter_rel = define_relations_array(rel_by_course, cota)
-                print(rel_by_course)
                 for i in range(0, len(rel_by_course)):
                     result[relations[i]][count].append(filter_rel[i])
-#                     print(relations[i], filter_rel[i])
             else:
                 for key in result:
                     result[key][count].append(0)
@@ -161,9 +161,7 @@ def create_graph(courses, relation_mat, rel):
         c2 = 0
         for course2 in courses:
             if course1 != course2:
-                #                 print(c1, c2)
                 if relation_mat[rel][c1][c2] > 0:
-                    #                     print((course1, course2, float(relation_mat[rel][c1][c2])))
                     G.add_weighted_edges_from(
                         [(course1, course2, float(relation_mat[rel][c1][c2]))])
             c2 += 1

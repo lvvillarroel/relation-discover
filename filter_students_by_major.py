@@ -46,4 +46,4 @@ df_io = df_aprov.loc[df_base['ID'].isin(io_students)]
 # Seleccionar solo las relaciones representativas. Se genera un diccionario con la info
 relations = ['and', 'xor', 'suc 1', 'suc 2', 'successor', 'predecessor']
 mat_rel = get_all_rel_by_rel(io_all_courses, relations, df_io, 0.2)
-create_graph(io_all_courses, mat_rel, 'suc 2')
+create_graph(io_all_courses, mat_rel, 'suc 1')
